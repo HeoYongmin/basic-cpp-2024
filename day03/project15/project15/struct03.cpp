@@ -6,6 +6,7 @@ C++ 클래스 : 클래스 멤버로 멤버 변수와 멤버 함수를 가진다
 
 class human{			// human 클래스(여러분이 만든 사용자 정의 자료형)
 public:                
+	
 	char name[20];            // 속성; 멤버 변수(name, age, job)
 	int age;
 	char job[20];
