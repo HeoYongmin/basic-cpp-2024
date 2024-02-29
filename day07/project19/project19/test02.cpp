@@ -13,9 +13,9 @@ public:
 	{
 		strcpy(name, myname);								// 문자열 초기화
 	}
-	int name()
+	string name()
 	{
-		return myname;
+		return name;
 	}
 };
 
