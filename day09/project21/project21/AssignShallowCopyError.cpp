@@ -15,6 +15,15 @@ public:
 		strcpy(name, myname);
 		age = myage;
 	}
+	Person& operator=(const Person& ref)
+	{
+		delete[]name;						// Yoon ji yul이 저장된 공간을 반환한다.
+		int len = strlen(ref.name) + 1;
+		name = new char[len];
+		strcpy(name, ref.name);
+		age = ref.age;
+		return *this;
+	}
 	void ShowPersonInfo() const
 	{
 		cout << "이름: " << name << endl;
