@@ -15,43 +15,34 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="project22.cpp">
+    <ClCompile Include="project23.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="InheritAssignOperation.cpp">
+    <ClCompile Include="ConvToObject.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="Improvelnit.cpp">
+    <ClCompile Include="ConvToPrimitive.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="array01.cpp">
+    <ClCompile Include="STDString.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="ArrayClass.cpp">
+    <ClCompile Include="string01.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="NewDeleteOverloading.cpp">
+    <ClCompile Include="StringClass.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="PointerOperatorOverloading.cpp">
+    <ClCompile Include="AddFunctionTemplate.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="SmartPointer.cpp">
+    <ClCompile Include="TwoTypeAddFunction.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="smartP.cpp">
+    <ClCompile Include="PrimitiveFunctionTemplate.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="Functor.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="test.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="grade.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="grade02.cpp">
+    <ClCompile Include="NeedSpecialFunctionTemplate.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
