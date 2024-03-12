@@ -89,7 +89,7 @@ int main()
 
     while (true) {
         cout << "------------ 상품관리 프로그램 ------------" << endl;
-        cout << "1. 상품추가     2.상품조회         3. 종료" << endl;
+        cout << "1. 상품추가     2. 상품조회      3. 상품검색      4. 종료" << endl;
         cin >> choice;
 
         if (choice == 1) {
@@ -146,22 +146,65 @@ int main()
             if (book != nullptr) {
                 cout << "책 정보:" << endl;
                 for (int i = 0; i < bcount; i++) {
-
                     book->ShowBookInfo();
                 }
             }
             if (handphone != nullptr) {
                 cout << "핸드폰 정보:" << endl;
-                handphone->ShowHandphoneInfo();
+                for (int i = 0; i < hcount; i++) {
+                    handphone->ShowHandphoneInfo();
+                }
             }
             if (computer != nullptr) {
                 cout << "컴퓨터 정보:" << endl;
-                computer->ShowComputerInfo();
+                for (int i = 0; i < ccount; i++) {
+                    computer->ShowComputerInfo();
+                }
             }
         }
         else if (choice == 3) {
-            cout << "프로그램을 종료합니다." << endl;
-            break;
+            cout << "상품 검색을 선택하였습니다." << endl;
+            cout << "어떤 상품을 검색하시겠습니까" << endl;
+            cout << "1. 책      2. 핸드폰       3.컴퓨터" << endl;
+            cin >> choice;
+
+            if (choice == 1) {
+                cout << "검색할 id를 입력해주세요: " << endl;
+                cin >> id;
+                if (book->GetID() == id) {
+                    cout << "책 정보" << endl;
+                    book->ShowBookInfo();
+                }
+                else {
+                    cout << "해당 id의 책이 없습니다." << endl;
+                }
+            }
+            else if (choice == 2) {
+                cout << "검색할 id를 입력해주세요" << endl;
+                cin >> id;
+                if (handphone->GetID() == id) {
+                    cout << "핸드폰 정보" << endl;
+                    handphone->ShowHandphoneInfo();
+                }
+                else {
+                    cout << "해당 id의 핸드폰이 없습니다." << endl;
+                }
+            }
+            else if (choice == 3) {
+                cout << "검색할 id를 입력해주세요" << endl;
+                cin >> id;
+                if (computer->GetID() == id) {
+                    cout << "컴퓨터 정보" << endl;
+                    computer->ShowComputerInfo();
+                }
+                else {
+                    cout << "해당 id의 컴퓨터가 없습니다." << endl;
+                }
+            }
+            else if (choice == 4) {
+                cout << "프로그램을 종료합니다." << endl;
+                break;
+            }
         }
     }
     // new를 사용하여 동적으로 할당된 객체를 가리킨 것을 delete를 사용함으로써 동적으로 할당된 메모리를 해제
