@@ -1,3 +1,8 @@
+/*
+File: test01.cpp
+Created: 24-03-06
+Author: 허용민
+*/
 #include <iostream>
 #include <string>
 using namespace std;
@@ -201,10 +206,10 @@ int main()
                     cout << "해당 id의 컴퓨터가 없습니다." << endl;
                 }
             }
-            else if (choice == 4) {
-                cout << "프로그램을 종료합니다." << endl;
-                break;
-            }
+        }
+        else if (choice == 4) {
+            cout << "프로그램을 종료합니다." << endl;
+            break;
         }
     }
     // new를 사용하여 동적으로 할당된 객체를 가리킨 것을 delete를 사용함으로써 동적으로 할당된 메모리를 해제
